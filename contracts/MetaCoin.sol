@@ -1,4 +1,4 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.5.0;
 
 import "./ConvertLib.sol";
 
@@ -12,7 +12,7 @@ contract MetaCoin {
 
 	event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
-	function MetaCoin() public {
+	constructor() public {
 		balances[tx.origin] = 10000;
 	}
 
